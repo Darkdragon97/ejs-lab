@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= restaurant.name %></title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= restaurant.name %></title>
+</head>
+<body>
   <%- include('./partials/nav') %>
-  <body>
-    <h1>Welcome to <%= restaurant.name %></h1>
-    <p>Address: <%= restaurant.address</p>
-    <p>Phone: <%= restaurant.phone %></p>
-    <p>
-      <%= restaurant.isOpen ? 'Yes, we are open!' : 'Sorry, we are closed.' %>
-    </p>
-  </body>
+  <h1>Welcome to <%= restaurant.name %></h1>
+  <p>Address: <%= restaurant.address %></p>
+  <p>Phone: <%= restaurant.phone %></p>
+  <p>
+    <%= restaurant.isOpen ? 'Yes, we are open!' : 'Sorry, we are closed.' %>
+  </p>
+</body>
 </html>
